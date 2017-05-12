@@ -30,6 +30,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = pokemons[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let pokemon = pokemons[indexPath.row]
+        performSegue(withIdentifier: "moveSegue", sender: pokemon)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let pokemonDetailsViewController = segue.destination as! PokemonDetailsViewController
+        pokemonDetailsViewController.pokemon = sender as! String
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
