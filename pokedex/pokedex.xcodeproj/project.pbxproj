@@ -13,6 +13,7 @@
 		C3E2738B1EC2EE0D00BB592E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E273891EC2EE0D00BB592E /* Main.storyboard */; };
 		C3E2738D1EC2EE0D00BB592E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E2738C1EC2EE0D00BB592E /* Assets.xcassets */; };
 		C3E273901EC2EE0D00BB592E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E2738E1EC2EE0D00BB592E /* LaunchScreen.storyboard */; };
+		C3EE31DC1ECC1ED400B97A9C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EE31DB1ECC1ED400B97A9C /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C3E2738C1EC2EE0D00BB592E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3E2738F1EC2EE0D00BB592E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3E273911EC2EE0D00BB592E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EE31DB1ECC1ED400B97A9C /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				C3E273851EC2EE0D00BB592E /* AppDelegate.swift */,
 				C3E273871EC2EE0D00BB592E /* ViewController.swift */,
+				C3EE31DB1ECC1ED400B97A9C /* Pokemon.swift */,
 				C30F0D821EC58A0100390ACD /* PokemonDetailsViewController.swift */,
 				C3E273891EC2EE0D00BB592E /* Main.storyboard */,
 				C3E2738C1EC2EE0D00BB592E /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E273881EC2EE0D00BB592E /* ViewController.swift in Sources */,
+				C3EE31DC1ECC1ED400B97A9C /* Pokemon.swift in Sources */,
 				C3E273861EC2EE0D00BB592E /* AppDelegate.swift in Sources */,
 				C30F0D831EC58A0100390ACD /* PokemonDetailsViewController.swift in Sources */,
 			);

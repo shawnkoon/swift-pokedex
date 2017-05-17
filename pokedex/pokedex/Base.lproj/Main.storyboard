@@ -79,8 +79,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAw-o4-LRe">
+                                <rect key="frame" x="166" y="305" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLp-sr-kYx">
+                                <rect key="frame" x="166" y="354" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kts-Qh-UfI">
-                                <rect key="frame" x="166" y="84" width="42" height="21"/>
+                                <rect key="frame" x="166" y="256" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -88,12 +100,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eAw-o4-LRe" firstAttribute="centerX" secondItem="rio-Vt-sUX" secondAttribute="centerX" id="0w5-Y4-zKo"/>
+                            <constraint firstItem="eAw-o4-LRe" firstAttribute="top" secondItem="Kts-Qh-UfI" secondAttribute="bottom" constant="28" id="3lP-QQ-U6h"/>
                             <constraint firstItem="Kts-Qh-UfI" firstAttribute="centerX" secondItem="rio-Vt-sUX" secondAttribute="centerX" id="9NH-fU-ZKB"/>
-                            <constraint firstItem="Kts-Qh-UfI" firstAttribute="top" secondItem="SOM-1Q-qVf" secondAttribute="bottom" constant="20" id="TST-BV-jaK"/>
+                            <constraint firstItem="WLp-sr-kYx" firstAttribute="top" secondItem="eAw-o4-LRe" secondAttribute="bottom" constant="28" id="JmG-rN-F2n"/>
+                            <constraint firstItem="Kts-Qh-UfI" firstAttribute="top" secondItem="SOM-1Q-qVf" secondAttribute="bottom" constant="192" id="TST-BV-jaK"/>
+                            <constraint firstItem="WLp-sr-kYx" firstAttribute="centerX" secondItem="rio-Vt-sUX" secondAttribute="centerX" id="V7G-Hl-qUz"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="pokemonText" destination="Kts-Qh-UfI" id="yoM-vk-uej"/>
+                        <outlet property="pokemonLevel" destination="eAw-o4-LRe" id="flu-5h-602"/>
+                        <outlet property="pokemonName" destination="Kts-Qh-UfI" id="nZh-JD-2wR"/>
+                        <outlet property="pokemonType" destination="WLp-sr-kYx" id="Fco-it-82t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mdw-Y9-dao" userLabel="First Responder" sceneMemberID="firstResponder"/>

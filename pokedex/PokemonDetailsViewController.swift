@@ -10,17 +10,19 @@ import UIKit
 
 class PokemonDetailsViewController: UIViewController {
     
-    @IBOutlet weak var pokemonText: UILabel!
+    @IBOutlet weak var pokemonName: UILabel!
+    @IBOutlet weak var pokemonLevel: UILabel!
+    @IBOutlet weak var pokemonType: UILabel!
     
-    var pokemon = "No pokemon"
+    var pokemon = Pokemon()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        pokemonText.text? = "You clicked " + pokemon + "!"
-        
-        
+        pokemonName.text? = "You clicked " + pokemon.pokemonName + "!"
+        pokemonLevel.text? = "Level : \(pokemon.pokemonLevel)"
+        pokemonType.text? = "Type : \(pokemon.pokemonType)"
     }
 
     override func didReceiveMemoryWarning() {
